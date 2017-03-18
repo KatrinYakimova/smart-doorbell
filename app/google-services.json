@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "766097829581",
+    "firebase_url": "https://doorbell-f9143.firebaseio.com",
+    "project_id": "doorbell-f9143",
+    "storage_bucket": "doorbell-f9143.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766097829581:android:e2374cf9e0d2a2cd",
+        "android_client_info": {
+          "package_name": "com.ltst.katrin.doorbell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766097829581-mar7ftcgdouasm4a0tsrb4p56n08i18k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUdgS7_kDiSnOzG-kJo8b-3IoByFSwADw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
