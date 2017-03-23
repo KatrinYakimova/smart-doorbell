@@ -20,24 +20,6 @@ import java.util.ArrayList;
 
 public class DoorbellEntryAdapter extends FirebaseRecyclerAdapter<DoorbellEntry, DoorbellEntryAdapter.DoorbellEntryViewHolder> {
 
-    /**
-     * ViewHolder for each doorbell entry
-     */
-    static class DoorbellEntryViewHolder extends RecyclerView.ViewHolder {
-
-        public final ImageView image;
-        public final TextView time;
-        public final TextView metadata;
-
-        public DoorbellEntryViewHolder(View itemView) {
-            super(itemView);
-
-            this.image = (ImageView) itemView.findViewById(R.id.imageView1);
-            this.time = (TextView) itemView.findViewById(R.id.textView1);
-            this.metadata = (TextView) itemView.findViewById(R.id.textView2);
-        }
-    }
-
     private Context applicationContext;
 
     public DoorbellEntryAdapter(Context context, DatabaseReference ref) {
@@ -78,4 +60,29 @@ public class DoorbellEntryAdapter extends FirebaseRecyclerAdapter<DoorbellEntry,
         }
     }
 
+    public interface callback {
+
+    }
+
+    /**
+     * ViewHolder for each doorbell entry
+     */
+    public static class DoorbellEntryViewHolder extends RecyclerView.ViewHolder {
+
+        public final ImageView image;
+        public final TextView time;
+        public final TextView metadata;
+
+        public DoorbellEntryViewHolder(View itemView) {
+            super(itemView);
+
+            this.image = (ImageView) itemView.findViewById(R.id.imageView1);
+            this.time = (TextView) itemView.findViewById(R.id.textView1);
+            this.metadata = (TextView) itemView.findViewById(R.id.textView2);
+        }
+
+        public interface ActionListener<T> {
+
+        }
+    }
 }
